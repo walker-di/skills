@@ -1,0 +1,4 @@
+interface:
+  display_name: "PM Story Splitter"
+  short_description: "Split large scope into V2 thin stories"
+  default_prompt: "Use $fortalece-api-routing-guide first, then $pm-story-splitter. Return strict V2 outputs with route_evidence_v2 and mutation_gate_v2, plus dependency_dag, mutation_payload_blueprint, and deterministic idempotency keys per story."

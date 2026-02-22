@@ -1,0 +1,4 @@
+interface:
+  display_name: "PM Hybrid Prioritizer"
+  short_description: "Score and rank backlog deterministically"
+  default_prompt: "Use $fortalece-api-routing-guide first, then $pm-hybrid-prioritizer to score backlog items and include route evidence (operation, family, auth_mode, why)."

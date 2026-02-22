@@ -1,0 +1,96 @@
+{
+  "name": "fortalece-ai-skills-public",
+  "version": "1.0.0",
+  "generated_at": "2026-02-22T20:20:26.190Z",
+  "source_root": ".codex/skills",
+  "skills": [
+    {
+      "id": "fortalece-api-routing-guide",
+      "name": "fortalece-api-routing-guide",
+      "description": "Select the correct Fortalece API operation for a PM intent using deterministic route evidence, runtime auth probes, and strict mutation gating.",
+      "display_name": "Fortalece API Routing Guide",
+      "short_description": "Select Fortalece API operations with V2 safety",
+      "default_prompt": "Use $fortalece-api-routing-guide to classify PM intent and return routing_decisions_v2 plus mutation_gate_v2. Enforce canonical /api/story-map/** policy, run runtime auth probe with x-workspace-id, and block mutations when route/auth/scope evidence is unresolved."
+    },
+    {
+      "id": "pm-intake-normalizer",
+      "name": "pm-intake-normalizer",
+      "description": "Normalize vague product requests into a strict V2 PM brief with explicit assumptions, non-goals, route evidence, and mutation gating.",
+      "display_name": "PM Intake Normalizer",
+      "short_description": "Convert vague asks into V2 PM briefs",
+      "default_prompt": "Use $fortalece-api-routing-guide first, then $pm-intake-normalizer. Return strict V2 outputs with route_evidence_v2 and mutation_gate_v2, including assumptions, non_goals, and explicit blockers when mutations are unsafe."
+    },
+    {
+      "id": "pm-backlog-health-auditor",
+      "name": "pm-backlog-health-auditor",
+      "description": "Audit backlog quality for duplicates, weak acceptance criteria, orphaned hierarchy links, and drift with strict V2 route evidence and mutation gating.",
+      "display_name": "PM Backlog Health Auditor",
+      "short_description": "Audit backlog hygiene and drift",
+      "default_prompt": "Use $fortalece-api-routing-guide first, then $pm-backlog-health-auditor to analyze backlog quality and include route evidence (operation, family, auth_mode, why)."
+    },
+    {
+      "id": "pm-story-splitter",
+      "name": "pm-story-splitter",
+      "description": "Decompose large epics/features into thin vertical stories with strict V2 contracts, dependency DAG validation, and mutation payload blueprints.",
+      "display_name": "PM Story Splitter",
+      "short_description": "Split large scope into V2 thin stories",
+      "default_prompt": "Use $fortalece-api-routing-guide first, then $pm-story-splitter. Return strict V2 outputs with route_evidence_v2 and mutation_gate_v2, plus dependency_dag, mutation_payload_blueprint, and deterministic idempotency keys per story."
+    },
+    {
+      "id": "pm-hybrid-prioritizer",
+      "name": "pm-hybrid-prioritizer",
+      "description": "Rank backlog items with a hybrid PM score and deterministic ordering, with V2 route evidence and mutation gating.",
+      "display_name": "PM Hybrid Prioritizer",
+      "short_description": "Score and rank backlog deterministically",
+      "default_prompt": "Use $fortalece-api-routing-guide first, then $pm-hybrid-prioritizer to score backlog items and include route evidence (operation, family, auth_mode, why)."
+    },
+    {
+      "id": "pm-dependency-risk-mapper",
+      "name": "pm-dependency-risk-mapper",
+      "description": "Identify dependency/blocker chains, quantify risk clusters, and produce dependency update plans with V2 route evidence and mutation gating.",
+      "display_name": "PM Dependency Mapper",
+      "short_description": "Map blockers and dependency risk",
+      "default_prompt": "Use $fortalece-api-routing-guide first, then $pm-dependency-risk-mapper to map dependency/blocker chains and include route evidence (operation, family, auth_mode, why)."
+    },
+    {
+      "id": "pm-release-capacity-planner",
+      "name": "pm-release-capacity-planner",
+      "description": "Allocate prioritized stories into releases/sprints using capacity constraints with V2 route evidence and mutation gating.",
+      "display_name": "PM Release Planner",
+      "short_description": "Plan releases by capacity and risk",
+      "default_prompt": "Use $fortalece-api-routing-guide first, then $pm-release-capacity-planner to allocate ranked stories into releases and include route evidence (operation, family, auth_mode, why)."
+    },
+    {
+      "id": "pm-feedback-triage-router",
+      "name": "pm-feedback-triage-router",
+      "description": "Convert validated product feedback into backlog-ready stories mapped to feature/release/priority context with V2 route evidence and mutation gating.",
+      "display_name": "PM Feedback Router",
+      "short_description": "Route feedback into backlog stories",
+      "default_prompt": "Use $fortalece-api-routing-guide first, then $pm-feedback-triage-router to triage feedback into mapped backlog stories and include route evidence (operation, family, auth_mode, why)."
+    },
+    {
+      "id": "pm-backlog-autopilot",
+      "name": "pm-backlog-autopilot",
+      "description": "Execute deterministic backlog organization in strict V2 batches with dry-run first, rollback notes, and mutation gating.",
+      "display_name": "PM Backlog Autopilot",
+      "short_description": "Auto-organize backlog in V2 safe batches",
+      "default_prompt": "Use $fortalece-api-routing-guide first, then $pm-backlog-autopilot. Return strict V2 outputs with route_evidence_v2 and mutation_gate_v2, mandatory dry_run_plan, bounded mutation_batches, and route_evidence_id on applied/failed changes."
+    },
+    {
+      "id": "pm-roadmap-status-reporter",
+      "name": "pm-roadmap-status-reporter",
+      "description": "Produce stakeholder-ready roadmap updates with progress and risk visibility, including V2 route evidence and mutation gating context.",
+      "display_name": "PM Roadmap Reporter",
+      "short_description": "Generate roadmap status updates",
+      "default_prompt": "Use $fortalece-api-routing-guide first, then $pm-roadmap-status-reporter to generate a roadmap report and include route evidence (operation, family, auth_mode, why)."
+    },
+    {
+      "id": "pm-backlog-drift-monitor",
+      "name": "pm-backlog-drift-monitor",
+      "description": "Monitor backlog drift against prioritization/dependency policy and apply corrective alignment with V2 route evidence and mutation gating.",
+      "display_name": "PM Drift Monitor",
+      "short_description": "Detect and correct backlog drift",
+      "default_prompt": "Use $fortalece-api-routing-guide first, then $pm-backlog-drift-monitor to detect/correct backlog drift and include route evidence (operation, family, auth_mode, why)."
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "PM Dependency Mapper"
+  short_description: "Map blockers and dependency risk"
+  default_prompt: "Use $fortalece-api-routing-guide first, then $pm-dependency-risk-mapper to map dependency/blocker chains and include route evidence (operation, family, auth_mode, why)."

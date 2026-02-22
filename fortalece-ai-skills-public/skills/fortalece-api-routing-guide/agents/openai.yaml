@@ -1,0 +1,4 @@
+interface:
+  display_name: "Fortalece API Routing Guide"
+  short_description: "Select Fortalece API operations with V2 safety"
+  default_prompt: "Use $fortalece-api-routing-guide to classify PM intent and return routing_decisions_v2 plus mutation_gate_v2. Enforce canonical /api/story-map/** policy, run runtime auth probe with x-workspace-id, and block mutations when route/auth/scope evidence is unresolved."

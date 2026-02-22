@@ -1,0 +1,4 @@
+interface:
+  display_name: "PM Backlog Autopilot"
+  short_description: "Auto-organize backlog in V2 safe batches"
+  default_prompt: "Use $fortalece-api-routing-guide first, then $pm-backlog-autopilot. Return strict V2 outputs with route_evidence_v2 and mutation_gate_v2, mandatory dry_run_plan, bounded mutation_batches, and route_evidence_id on applied/failed changes."

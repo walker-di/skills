@@ -1,0 +1,4 @@
+interface:
+  display_name: "PM Feedback Router"
+  short_description: "Route feedback into backlog stories"
+  default_prompt: "Use $fortalece-api-routing-guide first, then $pm-feedback-triage-router to triage feedback into mapped backlog stories and include route evidence (operation, family, auth_mode, why)."

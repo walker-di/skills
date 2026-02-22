@@ -1,0 +1,4 @@
+interface:
+  display_name: "PM Release Planner"
+  short_description: "Plan releases by capacity and risk"
+  default_prompt: "Use $fortalece-api-routing-guide first, then $pm-release-capacity-planner to allocate ranked stories into releases and include route evidence (operation, family, auth_mode, why)."

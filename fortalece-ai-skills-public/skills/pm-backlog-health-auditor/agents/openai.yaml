@@ -1,0 +1,4 @@
+interface:
+  display_name: "PM Backlog Health Auditor"
+  short_description: "Audit backlog hygiene and drift"
+  default_prompt: "Use $fortalece-api-routing-guide first, then $pm-backlog-health-auditor to analyze backlog quality and include route evidence (operation, family, auth_mode, why)."

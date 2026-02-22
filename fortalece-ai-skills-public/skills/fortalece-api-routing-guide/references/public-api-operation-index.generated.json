@@ -1,0 +1,4012 @@
+{
+  "version": "1.0.0",
+  "source": "apps/fortalece-ai-web/OPENAPI_AUTOMATION.yaml",
+  "operations": [
+    {
+      "operation": "POST /api/agent/{id}/chat",
+      "method": "POST",
+      "path": "/api/agent/{id}/chat",
+      "endpoint_family": "/api/agent/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/agents",
+      "method": "GET",
+      "path": "/api/agents",
+      "endpoint_family": "/api/agents/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/agents",
+      "method": "POST",
+      "path": "/api/agents",
+      "endpoint_family": "/api/agents/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/agents/{id}",
+      "method": "GET",
+      "path": "/api/agents/{id}",
+      "endpoint_family": "/api/agents/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/agents/{id}",
+      "method": "DELETE",
+      "path": "/api/agents/{id}",
+      "endpoint_family": "/api/agents/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/agents/{id}/conversation",
+      "method": "GET",
+      "path": "/api/agents/{id}/conversation",
+      "endpoint_family": "/api/agents/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/agents/{id}/followup",
+      "method": "POST",
+      "path": "/api/agents/{id}/followup",
+      "endpoint_family": "/api/agents/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/agents/config/{id}",
+      "method": "GET",
+      "path": "/api/agents/config/{id}",
+      "endpoint_family": "/api/agents/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/agents/config/{id}",
+      "method": "POST",
+      "path": "/api/agents/config/{id}",
+      "endpoint_family": "/api/agents/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "PUT /api/agents/config/{id}",
+      "method": "PUT",
+      "path": "/api/agents/config/{id}",
+      "endpoint_family": "/api/agents/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/agents/config/{id}",
+      "method": "DELETE",
+      "path": "/api/agents/config/{id}",
+      "endpoint_family": "/api/agents/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/ai-tools",
+      "method": "GET",
+      "path": "/api/ai-tools",
+      "endpoint_family": "/api/ai-tools/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/ai-tools",
+      "method": "POST",
+      "path": "/api/ai-tools",
+      "endpoint_family": "/api/ai-tools/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/ai-tools/{id}",
+      "method": "GET",
+      "path": "/api/ai-tools/{id}",
+      "endpoint_family": "/api/ai-tools/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "PUT /api/ai-tools/{id}",
+      "method": "PUT",
+      "path": "/api/ai-tools/{id}",
+      "endpoint_family": "/api/ai-tools/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/ai-tools/{id}",
+      "method": "DELETE",
+      "path": "/api/ai-tools/{id}",
+      "endpoint_family": "/api/ai-tools/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/ai-tools/{id}/duplicate",
+      "method": "POST",
+      "path": "/api/ai-tools/{id}/duplicate",
+      "endpoint_family": "/api/ai-tools/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/ai-tools/{id}/run",
+      "method": "POST",
+      "path": "/api/ai-tools/{id}/run",
+      "endpoint_family": "/api/ai-tools/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/api-keys",
+      "method": "GET",
+      "path": "/api/api-keys",
+      "endpoint_family": "/api/api-keys/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/api-keys",
+      "method": "POST",
+      "path": "/api/api-keys",
+      "endpoint_family": "/api/api-keys/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/auth/jwt",
+      "method": "GET",
+      "path": "/api/auth/jwt",
+      "endpoint_family": "/api/auth/jwt",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/blog",
+      "method": "GET",
+      "path": "/api/blog",
+      "endpoint_family": "/api/blog/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/blog/files",
+      "method": "GET",
+      "path": "/api/blog/files",
+      "endpoint_family": "/api/blog/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/blog/files",
+      "method": "POST",
+      "path": "/api/blog/files",
+      "endpoint_family": "/api/blog/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/blog/files/{id}",
+      "method": "DELETE",
+      "path": "/api/blog/files/{id}",
+      "endpoint_family": "/api/blog/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/blog/posts",
+      "method": "GET",
+      "path": "/api/blog/posts",
+      "endpoint_family": "/api/blog/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/blog/posts",
+      "method": "POST",
+      "path": "/api/blog/posts",
+      "endpoint_family": "/api/blog/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/blog/posts/{id}",
+      "method": "GET",
+      "path": "/api/blog/posts/{id}",
+      "endpoint_family": "/api/blog/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "PUT /api/blog/posts/{id}",
+      "method": "PUT",
+      "path": "/api/blog/posts/{id}",
+      "endpoint_family": "/api/blog/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/blog/posts/{id}",
+      "method": "DELETE",
+      "path": "/api/blog/posts/{id}",
+      "endpoint_family": "/api/blog/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "PATCH /api/blog/posts/{id}/publish",
+      "method": "PATCH",
+      "path": "/api/blog/posts/{id}/publish",
+      "endpoint_family": "/api/blog/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/blog/posts/{id}/translate",
+      "method": "POST",
+      "path": "/api/blog/posts/{id}/translate",
+      "endpoint_family": "/api/blog/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/blog/translate",
+      "method": "POST",
+      "path": "/api/blog/translate",
+      "endpoint_family": "/api/blog/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/chat/message",
+      "method": "POST",
+      "path": "/api/chat/message",
+      "endpoint_family": "/api/chat/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/chat/work-items/{id}",
+      "method": "POST",
+      "path": "/api/chat/work-items/{id}",
+      "endpoint_family": "/api/chat/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/embeds/{embedId}/feedback",
+      "method": "POST",
+      "path": "/api/embeds/{embedId}/feedback",
+      "endpoint_family": "/api/embeds/**",
+      "auth_mode": "public",
+      "scope_requirements": [],
+      "mutation_class": "write",
+      "security": []
+    },
+    {
+      "operation": "POST /api/embeds/{embedId}/upload",
+      "method": "POST",
+      "path": "/api/embeds/{embedId}/upload",
+      "endpoint_family": "/api/embeds/**",
+      "auth_mode": "public",
+      "scope_requirements": [],
+      "mutation_class": "write",
+      "security": []
+    },
+    {
+      "operation": "GET /api/feedback",
+      "method": "GET",
+      "path": "/api/feedback",
+      "endpoint_family": "/api/feedback/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/feedback",
+      "method": "POST",
+      "path": "/api/feedback",
+      "endpoint_family": "/api/feedback/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/feedback/{id}",
+      "method": "GET",
+      "path": "/api/feedback/{id}",
+      "endpoint_family": "/api/feedback/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "PUT /api/feedback/{id}",
+      "method": "PUT",
+      "path": "/api/feedback/{id}",
+      "endpoint_family": "/api/feedback/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/feedback/{id}",
+      "method": "DELETE",
+      "path": "/api/feedback/{id}",
+      "endpoint_family": "/api/feedback/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/feedback/{id}/archive",
+      "method": "POST",
+      "path": "/api/feedback/{id}/archive",
+      "endpoint_family": "/api/feedback/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/feedback/{id}/create-and-assign",
+      "method": "POST",
+      "path": "/api/feedback/{id}/create-and-assign",
+      "endpoint_family": "/api/feedback/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/feedback/{id}/queue",
+      "method": "GET",
+      "path": "/api/feedback/{id}/queue",
+      "endpoint_family": "/api/feedback/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/feedback/{id}/queue/{actionId}/cancel",
+      "method": "POST",
+      "path": "/api/feedback/{id}/queue/{actionId}/cancel",
+      "endpoint_family": "/api/feedback/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/feedback/{id}/reanalyze",
+      "method": "POST",
+      "path": "/api/feedback/{id}/reanalyze",
+      "endpoint_family": "/api/feedback/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/feedback/{id}/work-item",
+      "method": "POST",
+      "path": "/api/feedback/{id}/work-item",
+      "endpoint_family": "/api/feedback/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/feedback/actions/active",
+      "method": "GET",
+      "path": "/api/feedback/actions/active",
+      "endpoint_family": "/api/feedback/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/integrations",
+      "method": "GET",
+      "path": "/api/integrations",
+      "endpoint_family": "/api/integrations/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/integrations/{provider}",
+      "method": "GET",
+      "path": "/api/integrations/{provider}",
+      "endpoint_family": "/api/integrations/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/integrations/{provider}",
+      "method": "POST",
+      "path": "/api/integrations/{provider}",
+      "endpoint_family": "/api/integrations/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "PUT /api/integrations/{provider}",
+      "method": "PUT",
+      "path": "/api/integrations/{provider}",
+      "endpoint_family": "/api/integrations/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/integrations/{provider}",
+      "method": "DELETE",
+      "path": "/api/integrations/{provider}",
+      "endpoint_family": "/api/integrations/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/integrations/{provider}/test",
+      "method": "POST",
+      "path": "/api/integrations/{provider}/test",
+      "endpoint_family": "/api/integrations/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/integrations/cursor/agents",
+      "method": "GET",
+      "path": "/api/integrations/cursor/agents",
+      "endpoint_family": "/api/integrations/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/integrations/cursor/agents",
+      "method": "POST",
+      "path": "/api/integrations/cursor/agents",
+      "endpoint_family": "/api/integrations/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/integrations/cursor/agents/{agentId}",
+      "method": "GET",
+      "path": "/api/integrations/cursor/agents/{agentId}",
+      "endpoint_family": "/api/integrations/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/integrations/cursor/agents/{agentId}",
+      "method": "POST",
+      "path": "/api/integrations/cursor/agents/{agentId}",
+      "endpoint_family": "/api/integrations/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/integrations/cursor/agents/{agentId}",
+      "method": "DELETE",
+      "path": "/api/integrations/cursor/agents/{agentId}",
+      "endpoint_family": "/api/integrations/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/integrations/cursor/models",
+      "method": "GET",
+      "path": "/api/integrations/cursor/models",
+      "endpoint_family": "/api/integrations/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/integrations/github",
+      "method": "GET",
+      "path": "/api/integrations/github",
+      "endpoint_family": "/api/integrations/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/integrations/github",
+      "method": "POST",
+      "path": "/api/integrations/github",
+      "endpoint_family": "/api/integrations/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/integrations/github",
+      "method": "DELETE",
+      "path": "/api/integrations/github",
+      "endpoint_family": "/api/integrations/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/integrations/github/repositories",
+      "method": "GET",
+      "path": "/api/integrations/github/repositories",
+      "endpoint_family": "/api/integrations/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/integrations/github/test",
+      "method": "POST",
+      "path": "/api/integrations/github/test",
+      "endpoint_family": "/api/integrations/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/issues/{id}/agent",
+      "method": "GET",
+      "path": "/api/issues/{id}/agent",
+      "endpoint_family": "/api/issues/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/issues/{id}/ai-eligibility",
+      "method": "GET",
+      "path": "/api/issues/{id}/ai-eligibility",
+      "endpoint_family": "/api/issues/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/issues/{id}/assign-agent",
+      "method": "POST",
+      "path": "/api/issues/{id}/assign-agent",
+      "endpoint_family": "/api/issues/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/marketing/campaigns",
+      "method": "GET",
+      "path": "/api/marketing/campaigns",
+      "endpoint_family": "/api/marketing/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/marketing/campaigns",
+      "method": "POST",
+      "path": "/api/marketing/campaigns",
+      "endpoint_family": "/api/marketing/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/marketing/campaigns/{id}",
+      "method": "GET",
+      "path": "/api/marketing/campaigns/{id}",
+      "endpoint_family": "/api/marketing/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "PUT /api/marketing/campaigns/{id}",
+      "method": "PUT",
+      "path": "/api/marketing/campaigns/{id}",
+      "endpoint_family": "/api/marketing/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/marketing/campaigns/{id}",
+      "method": "DELETE",
+      "path": "/api/marketing/campaigns/{id}",
+      "endpoint_family": "/api/marketing/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/marketing/campaigns/{id}/content",
+      "method": "GET",
+      "path": "/api/marketing/campaigns/{id}/content",
+      "endpoint_family": "/api/marketing/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/marketing/campaigns/{id}/effectiveness",
+      "method": "GET",
+      "path": "/api/marketing/campaigns/{id}/effectiveness",
+      "endpoint_family": "/api/marketing/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/marketing/campaigns/{id}/goals",
+      "method": "GET",
+      "path": "/api/marketing/campaigns/{id}/goals",
+      "endpoint_family": "/api/marketing/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/marketing/campaigns/{id}/journey",
+      "method": "GET",
+      "path": "/api/marketing/campaigns/{id}/journey",
+      "endpoint_family": "/api/marketing/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/marketing/content",
+      "method": "GET",
+      "path": "/api/marketing/content",
+      "endpoint_family": "/api/marketing/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/marketing/content",
+      "method": "POST",
+      "path": "/api/marketing/content",
+      "endpoint_family": "/api/marketing/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/marketing/content-items",
+      "method": "GET",
+      "path": "/api/marketing/content-items",
+      "endpoint_family": "/api/marketing/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/marketing/content-items",
+      "method": "POST",
+      "path": "/api/marketing/content-items",
+      "endpoint_family": "/api/marketing/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/marketing/content-items/{id}",
+      "method": "GET",
+      "path": "/api/marketing/content-items/{id}",
+      "endpoint_family": "/api/marketing/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "PUT /api/marketing/content-items/{id}",
+      "method": "PUT",
+      "path": "/api/marketing/content-items/{id}",
+      "endpoint_family": "/api/marketing/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/marketing/content-items/{id}",
+      "method": "DELETE",
+      "path": "/api/marketing/content-items/{id}",
+      "endpoint_family": "/api/marketing/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "PUT /api/marketing/content/{id}",
+      "method": "PUT",
+      "path": "/api/marketing/content/{id}",
+      "endpoint_family": "/api/marketing/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/marketing/content/{id}",
+      "method": "DELETE",
+      "path": "/api/marketing/content/{id}",
+      "endpoint_family": "/api/marketing/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/marketing/features",
+      "method": "GET",
+      "path": "/api/marketing/features",
+      "endpoint_family": "/api/marketing/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/marketing/features",
+      "method": "POST",
+      "path": "/api/marketing/features",
+      "endpoint_family": "/api/marketing/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "PUT /api/marketing/features/{id}",
+      "method": "PUT",
+      "path": "/api/marketing/features/{id}",
+      "endpoint_family": "/api/marketing/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/marketing/features/{id}",
+      "method": "DELETE",
+      "path": "/api/marketing/features/{id}",
+      "endpoint_family": "/api/marketing/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/notifications",
+      "method": "GET",
+      "path": "/api/notifications",
+      "endpoint_family": "/api/notifications",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/observability/agent-logs",
+      "method": "GET",
+      "path": "/api/observability/agent-logs",
+      "endpoint_family": "/api/observability/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/observability/agent-logs",
+      "method": "POST",
+      "path": "/api/observability/agent-logs",
+      "endpoint_family": "/api/observability/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/observability/agent-logs",
+      "method": "DELETE",
+      "path": "/api/observability/agent-logs",
+      "endpoint_family": "/api/observability/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/observability/agent-logs/traces",
+      "method": "GET",
+      "path": "/api/observability/agent-logs/traces",
+      "endpoint_family": "/api/observability/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/observability/agent-logs/traces/{traceId}",
+      "method": "GET",
+      "path": "/api/observability/agent-logs/traces/{traceId}",
+      "endpoint_family": "/api/observability/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/observability/event-logs",
+      "method": "GET",
+      "path": "/api/observability/event-logs",
+      "endpoint_family": "/api/observability/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/observability/event-logs",
+      "method": "POST",
+      "path": "/api/observability/event-logs",
+      "endpoint_family": "/api/observability/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/projects",
+      "method": "GET",
+      "path": "/api/projects",
+      "endpoint_family": "/api/projects/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/projects",
+      "method": "POST",
+      "path": "/api/projects",
+      "endpoint_family": "/api/projects/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/projects/{id}",
+      "method": "GET",
+      "path": "/api/projects/{id}",
+      "endpoint_family": "/api/projects/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "PUT /api/projects/{id}",
+      "method": "PUT",
+      "path": "/api/projects/{id}",
+      "endpoint_family": "/api/projects/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/projects/{id}",
+      "method": "DELETE",
+      "path": "/api/projects/{id}",
+      "endpoint_family": "/api/projects/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/projects/{id}/embeds",
+      "method": "GET",
+      "path": "/api/projects/{id}/embeds",
+      "endpoint_family": "/api/projects/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/projects/{id}/embeds",
+      "method": "POST",
+      "path": "/api/projects/{id}/embeds",
+      "endpoint_family": "/api/projects/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/projects/{id}/embeds/{embedId}",
+      "method": "GET",
+      "path": "/api/projects/{id}/embeds/{embedId}",
+      "endpoint_family": "/api/projects/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "PUT /api/projects/{id}/embeds/{embedId}",
+      "method": "PUT",
+      "path": "/api/projects/{id}/embeds/{embedId}",
+      "endpoint_family": "/api/projects/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/projects/{id}/embeds/{embedId}",
+      "method": "DELETE",
+      "path": "/api/projects/{id}/embeds/{embedId}",
+      "endpoint_family": "/api/projects/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/projects/{id}/embeds/brand-detection",
+      "method": "POST",
+      "path": "/api/projects/{id}/embeds/brand-detection",
+      "endpoint_family": "/api/projects/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/projects/{id}/feedback",
+      "method": "GET",
+      "path": "/api/projects/{id}/feedback",
+      "endpoint_family": "/api/projects/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/projects/{id}/feedback",
+      "method": "POST",
+      "path": "/api/projects/{id}/feedback",
+      "endpoint_family": "/api/projects/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/projects/{id}/integrations/github/webhook",
+      "method": "GET",
+      "path": "/api/projects/{id}/integrations/github/webhook",
+      "endpoint_family": "/api/projects/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/projects/{id}/integrations/github/webhook",
+      "method": "POST",
+      "path": "/api/projects/{id}/integrations/github/webhook",
+      "endpoint_family": "/api/projects/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/projects/{id}/members",
+      "method": "GET",
+      "path": "/api/projects/{id}/members",
+      "endpoint_family": "/api/projects/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/projects/{id}/members",
+      "method": "POST",
+      "path": "/api/projects/{id}/members",
+      "endpoint_family": "/api/projects/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "PUT /api/projects/{id}/members/{memberId}",
+      "method": "PUT",
+      "path": "/api/projects/{id}/members/{memberId}",
+      "endpoint_family": "/api/projects/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/projects/{id}/members/{memberId}",
+      "method": "DELETE",
+      "path": "/api/projects/{id}/members/{memberId}",
+      "endpoint_family": "/api/projects/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/projects/{id}/webhooks",
+      "method": "GET",
+      "path": "/api/projects/{id}/webhooks",
+      "endpoint_family": "/api/projects/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/projects/{id}/webhooks",
+      "method": "POST",
+      "path": "/api/projects/{id}/webhooks",
+      "endpoint_family": "/api/projects/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/projects/{id}/webhooks/{webhookId}",
+      "method": "DELETE",
+      "path": "/api/projects/{id}/webhooks/{webhookId}",
+      "endpoint_family": "/api/projects/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/projects/{id}/widget-config",
+      "method": "GET",
+      "path": "/api/projects/{id}/widget-config",
+      "endpoint_family": "/api/projects/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "PUT /api/projects/{id}/widget-config",
+      "method": "PUT",
+      "path": "/api/projects/{id}/widget-config",
+      "endpoint_family": "/api/projects/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/queue",
+      "method": "GET",
+      "path": "/api/queue",
+      "endpoint_family": "/api/queue/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/queue",
+      "method": "DELETE",
+      "path": "/api/queue",
+      "endpoint_family": "/api/queue/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/queue/{id}/cancel",
+      "method": "POST",
+      "path": "/api/queue/{id}/cancel",
+      "endpoint_family": "/api/queue/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/queue/{id}/reorder",
+      "method": "POST",
+      "path": "/api/queue/{id}/reorder",
+      "endpoint_family": "/api/queue/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/skills",
+      "method": "GET",
+      "path": "/api/skills",
+      "endpoint_family": "/api/skills/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/skills",
+      "method": "POST",
+      "path": "/api/skills",
+      "endpoint_family": "/api/skills/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/skills/{id}",
+      "method": "GET",
+      "path": "/api/skills/{id}",
+      "endpoint_family": "/api/skills/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "PUT /api/skills/{id}",
+      "method": "PUT",
+      "path": "/api/skills/{id}",
+      "endpoint_family": "/api/skills/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/skills/{id}",
+      "method": "DELETE",
+      "path": "/api/skills/{id}",
+      "endpoint_family": "/api/skills/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/storage/{path}",
+      "method": "GET",
+      "path": "/api/storage/{path}",
+      "endpoint_family": "/api/storage/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "HEAD /api/storage/{path}",
+      "method": "HEAD",
+      "path": "/api/storage/{path}",
+      "endpoint_family": "/api/storage/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/story-map",
+      "method": "GET",
+      "path": "/api/story-map",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/story-map/agents",
+      "method": "GET",
+      "path": "/api/story-map/agents",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/story-map/epics",
+      "method": "GET",
+      "path": "/api/story-map/epics",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/story-map/epics",
+      "method": "POST",
+      "path": "/api/story-map/epics",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/story-map/epics/{id}",
+      "method": "GET",
+      "path": "/api/story-map/epics/{id}",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "PUT /api/story-map/epics/{id}",
+      "method": "PUT",
+      "path": "/api/story-map/epics/{id}",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/story-map/epics/{id}",
+      "method": "DELETE",
+      "path": "/api/story-map/epics/{id}",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/story-map/epics/{id}/move-project",
+      "method": "POST",
+      "path": "/api/story-map/epics/{id}/move-project",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/story-map/epics/{id}/queue",
+      "method": "GET",
+      "path": "/api/story-map/epics/{id}/queue",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/story-map/epics/{id}/queue",
+      "method": "DELETE",
+      "path": "/api/story-map/epics/{id}/queue",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/story-map/epics/{id}/reanalyze",
+      "method": "POST",
+      "path": "/api/story-map/epics/{id}/reanalyze",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/story-map/features",
+      "method": "GET",
+      "path": "/api/story-map/features",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/story-map/features",
+      "method": "POST",
+      "path": "/api/story-map/features",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/story-map/features/{id}",
+      "method": "GET",
+      "path": "/api/story-map/features/{id}",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "PUT /api/story-map/features/{id}",
+      "method": "PUT",
+      "path": "/api/story-map/features/{id}",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/story-map/features/{id}",
+      "method": "DELETE",
+      "path": "/api/story-map/features/{id}",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/story-map/features/{id}/move-project",
+      "method": "POST",
+      "path": "/api/story-map/features/{id}/move-project",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/story-map/personas",
+      "method": "GET",
+      "path": "/api/story-map/personas",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/story-map/personas",
+      "method": "POST",
+      "path": "/api/story-map/personas",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/story-map/personas/{id}",
+      "method": "GET",
+      "path": "/api/story-map/personas/{id}",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "PUT /api/story-map/personas/{id}",
+      "method": "PUT",
+      "path": "/api/story-map/personas/{id}",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/story-map/personas/{id}",
+      "method": "DELETE",
+      "path": "/api/story-map/personas/{id}",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/story-map/releases",
+      "method": "GET",
+      "path": "/api/story-map/releases",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/story-map/releases",
+      "method": "POST",
+      "path": "/api/story-map/releases",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/story-map/releases/{id}",
+      "method": "GET",
+      "path": "/api/story-map/releases/{id}",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "PUT /api/story-map/releases/{id}",
+      "method": "PUT",
+      "path": "/api/story-map/releases/{id}",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/story-map/releases/{id}",
+      "method": "DELETE",
+      "path": "/api/story-map/releases/{id}",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/story-map/work-items",
+      "method": "GET",
+      "path": "/api/story-map/work-items",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/story-map/work-items",
+      "method": "POST",
+      "path": "/api/story-map/work-items",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/story-map/work-items/{id}",
+      "method": "GET",
+      "path": "/api/story-map/work-items/{id}",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "PUT /api/story-map/work-items/{id}",
+      "method": "PUT",
+      "path": "/api/story-map/work-items/{id}",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/story-map/work-items/{id}",
+      "method": "DELETE",
+      "path": "/api/story-map/work-items/{id}",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/story-map/work-items/bulk-update",
+      "method": "POST",
+      "path": "/api/story-map/work-items/bulk-update",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/upload/confirm",
+      "method": "POST",
+      "path": "/api/upload/confirm",
+      "endpoint_family": "/api/upload/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/upload/request-url",
+      "method": "POST",
+      "path": "/api/upload/request-url",
+      "endpoint_family": "/api/upload/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/work-items",
+      "method": "GET",
+      "path": "/api/work-items",
+      "endpoint_family": "/api/work-items/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/work-items",
+      "method": "POST",
+      "path": "/api/work-items",
+      "endpoint_family": "/api/work-items/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/work-items/{id}",
+      "method": "GET",
+      "path": "/api/work-items/{id}",
+      "endpoint_family": "/api/work-items/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "PUT /api/work-items/{id}",
+      "method": "PUT",
+      "path": "/api/work-items/{id}",
+      "endpoint_family": "/api/work-items/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/work-items/{id}",
+      "method": "DELETE",
+      "path": "/api/work-items/{id}",
+      "endpoint_family": "/api/work-items/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/work-items/{id}/ci-runs",
+      "method": "GET",
+      "path": "/api/work-items/{id}/ci-runs",
+      "endpoint_family": "/api/work-items/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/work-items/{id}/ci-runs/{runId}/diagnostics",
+      "method": "GET",
+      "path": "/api/work-items/{id}/ci-runs/{runId}/diagnostics",
+      "endpoint_family": "/api/work-items/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/work-items/{id}/ci-runs/{runId}/events",
+      "method": "GET",
+      "path": "/api/work-items/{id}/ci-runs/{runId}/events",
+      "endpoint_family": "/api/work-items/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/work-items/{id}/conversations",
+      "method": "GET",
+      "path": "/api/work-items/{id}/conversations",
+      "endpoint_family": "/api/work-items/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/work-items/{id}/conversations/{channel}/messages",
+      "method": "GET",
+      "path": "/api/work-items/{id}/conversations/{channel}/messages",
+      "endpoint_family": "/api/work-items/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/work-items/{id}/conversations/{channel}/messages",
+      "method": "POST",
+      "path": "/api/work-items/{id}/conversations/{channel}/messages",
+      "endpoint_family": "/api/work-items/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/work-items/{id}/conversations/threads",
+      "method": "GET",
+      "path": "/api/work-items/{id}/conversations/threads",
+      "endpoint_family": "/api/work-items/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/work-items/{id}/conversations/threads",
+      "method": "POST",
+      "path": "/api/work-items/{id}/conversations/threads",
+      "endpoint_family": "/api/work-items/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/work-items/{id}/conversations/threads/{threadId}/messages",
+      "method": "GET",
+      "path": "/api/work-items/{id}/conversations/threads/{threadId}/messages",
+      "endpoint_family": "/api/work-items/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/work-items/{id}/conversations/threads/{threadId}/messages",
+      "method": "POST",
+      "path": "/api/work-items/{id}/conversations/threads/{threadId}/messages",
+      "endpoint_family": "/api/work-items/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/work-items/{id}/delivery-incidents",
+      "method": "GET",
+      "path": "/api/work-items/{id}/delivery-incidents",
+      "endpoint_family": "/api/work-items/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/work-items/{id}/delivery-incidents/{incidentId}",
+      "method": "POST",
+      "path": "/api/work-items/{id}/delivery-incidents/{incidentId}",
+      "endpoint_family": "/api/work-items/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/work-items/{id}/deployment",
+      "method": "GET",
+      "path": "/api/work-items/{id}/deployment",
+      "endpoint_family": "/api/work-items/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/work-items/{id}/deployment/merge",
+      "method": "POST",
+      "path": "/api/work-items/{id}/deployment/merge",
+      "endpoint_family": "/api/work-items/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/work-items/{id}/environments",
+      "method": "GET",
+      "path": "/api/work-items/{id}/environments",
+      "endpoint_family": "/api/work-items/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/work-items/{id}/environments",
+      "method": "POST",
+      "path": "/api/work-items/{id}/environments",
+      "endpoint_family": "/api/work-items/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/work-items/{id}/environments/{envKey}/history",
+      "method": "GET",
+      "path": "/api/work-items/{id}/environments/{envKey}/history",
+      "endpoint_family": "/api/work-items/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/work-items/{id}/queue",
+      "method": "GET",
+      "path": "/api/work-items/{id}/queue",
+      "endpoint_family": "/api/work-items/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/work-items/{id}/queue",
+      "method": "DELETE",
+      "path": "/api/work-items/{id}/queue",
+      "endpoint_family": "/api/work-items/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/work-items/{id}/queue/{actionId}/cancel",
+      "method": "POST",
+      "path": "/api/work-items/{id}/queue/{actionId}/cancel",
+      "endpoint_family": "/api/work-items/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/work-items/{id}/queue/{actionId}/trace",
+      "method": "GET",
+      "path": "/api/work-items/{id}/queue/{actionId}/trace",
+      "endpoint_family": "/api/work-items/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/work-items/{id}/reanalyze",
+      "method": "POST",
+      "path": "/api/work-items/{id}/reanalyze",
+      "endpoint_family": "/api/work-items/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/work-items/{id}/timeline",
+      "method": "GET",
+      "path": "/api/work-items/{id}/timeline",
+      "endpoint_family": "/api/work-items/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/workspace",
+      "method": "GET",
+      "path": "/api/workspace",
+      "endpoint_family": "/api/workspace/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/workspace",
+      "method": "POST",
+      "path": "/api/workspace",
+      "endpoint_family": "/api/workspace/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/workspace/{id}",
+      "method": "GET",
+      "path": "/api/workspace/{id}",
+      "endpoint_family": "/api/workspace/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "PUT /api/workspace/{id}",
+      "method": "PUT",
+      "path": "/api/workspace/{id}",
+      "endpoint_family": "/api/workspace/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/workspace/{id}",
+      "method": "DELETE",
+      "path": "/api/workspace/{id}",
+      "endpoint_family": "/api/workspace/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "PUT /api/workspace/current",
+      "method": "PUT",
+      "path": "/api/workspace/current",
+      "endpoint_family": "/api/workspace/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/workspace/invitations",
+      "method": "GET",
+      "path": "/api/workspace/invitations",
+      "endpoint_family": "/api/workspace/invitations/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/workspace/invitations",
+      "method": "POST",
+      "path": "/api/workspace/invitations",
+      "endpoint_family": "/api/workspace/invitations/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/workspace/invitations/{id}",
+      "method": "DELETE",
+      "path": "/api/workspace/invitations/{id}",
+      "endpoint_family": "/api/workspace/invitations/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/workspace/invitations/accept",
+      "method": "POST",
+      "path": "/api/workspace/invitations/accept",
+      "endpoint_family": "/api/workspace/invitations/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/workspace/members",
+      "method": "GET",
+      "path": "/api/workspace/members",
+      "endpoint_family": "/api/workspace/members/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/workspace/members",
+      "method": "POST",
+      "path": "/api/workspace/members",
+      "endpoint_family": "/api/workspace/members/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "PUT /api/workspace/members/{id}",
+      "method": "PUT",
+      "path": "/api/workspace/members/{id}",
+      "endpoint_family": "/api/workspace/members/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/workspace/members/{id}",
+      "method": "DELETE",
+      "path": "/api/workspace/members/{id}",
+      "endpoint_family": "/api/workspace/members/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/workspace/transfer-ownership",
+      "method": "POST",
+      "path": "/api/workspace/transfer-ownership",
+      "endpoint_family": "/api/workspace/transfer-ownership",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    }
+  ]
+}

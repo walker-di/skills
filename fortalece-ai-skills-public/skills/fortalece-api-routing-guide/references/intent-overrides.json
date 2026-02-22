@@ -1,0 +1,135 @@
+{
+  "version": "2.0.0",
+  "rules": [
+    {
+      "id": "pm-story-map-hierarchy",
+      "intent": "manage_story_map_hierarchy",
+      "match_any": [
+        "story map",
+        "story-map",
+        "epic",
+        "feature hierarchy",
+        "persona backlog",
+        "release lane"
+      ],
+      "endpoint_family": "/api/story-map/**",
+      "preferred_operations": [
+        "GET /api/story-map",
+        "POST /api/story-map/epics",
+        "POST /api/story-map/features",
+        "POST /api/story-map/work-items",
+        "PUT /api/story-map/work-items/{id}"
+      ],
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "mixed",
+      "why": "Story-map hierarchy and planning flows are owned by the canonical /api/story-map family."
+    },
+    {
+      "id": "pm-organize-backlog",
+      "intent": "organize_backlog_for_project",
+      "match_any": [
+        "organize backlog",
+        "backlog prioritization",
+        "reorder stories",
+        "plan release"
+      ],
+      "endpoint_family": "/api/work-items/**",
+      "preferred_operations": [
+        "GET /api/work-items",
+        "PUT /api/work-items/{id}",
+        "POST /api/work-items"
+      ],
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "mixed",
+      "why": "Backlog state, priority, and ordering are modeled as work-item operations."
+    },
+    {
+      "id": "pm-feedback-triage",
+      "intent": "triage_feedback_into_backlog",
+      "match_any": [
+        "triage feedback",
+        "feedback routing",
+        "feedback backlog"
+      ],
+      "endpoint_family": "/api/feedback/**",
+      "preferred_operations": [
+        "GET /api/feedback",
+        "POST /api/feedback",
+        "POST /api/feedback/{id}/work-item"
+      ],
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "mixed",
+      "why": "Feedback workflows begin in feedback APIs and may map into work-items."
+    },
+    {
+      "id": "pm-project-feedback",
+      "intent": "create_project_feedback",
+      "match_any": [
+        "project feedback",
+        "add feedback to project",
+        "capture stakeholder feedback"
+      ],
+      "endpoint_family": "/api/projects/**",
+      "preferred_operations": [
+        "POST /api/projects/{id}/feedback",
+        "GET /api/projects/{id}/feedback"
+      ],
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "mixed",
+      "why": "Project-scoped feedback ingestion and retrieval live under projects endpoints."
+    },
+    {
+      "id": "pm-roadmap-publish",
+      "intent": "publish_roadmap_update",
+      "match_any": [
+        "publish roadmap",
+        "publish post",
+        "publish status update",
+        "unpublish post"
+      ],
+      "endpoint_family": "/api/blog/**",
+      "preferred_operations": [
+        "PATCH /api/blog/posts/{id}/publish",
+        "POST /api/blog/posts",
+        "PUT /api/blog/posts/{id}"
+      ],
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "why": "Roadmap/status publishing is represented via blog post publish endpoint."
+    },
+    {
+      "id": "pm-roadmap-read",
+      "intent": "read_roadmap_status",
+      "match_any": [
+        "roadmap status",
+        "status report",
+        "weekly roadmap"
+      ],
+      "endpoint_family": "/api/work-items/**",
+      "preferred_operations": [
+        "GET /api/work-items",
+        "GET /api/work-items/{id}/timeline"
+      ],
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "why": "Delivery status is derived primarily from work-item state and timeline data."
+    }
+  ]
+}
