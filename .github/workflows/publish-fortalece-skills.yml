@@ -1,0 +1,180 @@
+name: Publish Fortalece Skills
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_ref:
+        description: pic-pay ref to publish from (branch/tag/SHA)
+        required: true
+        default: main
+        type: string
+      dry_run:
+        description: Run validation/build but do not push updates
+        required: true
+        default: false
+        type: boolean
+
+env:
+  SOURCE_REPO: Walker-D-I/pic-pay
+  SOURCE_PATH: _src/pic-pay
+  TARGET_BRANCH: main
+  TARGET_DIR: fortalece-ai-skills-public
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Validate required secret
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -z "${{ secrets.SKILL_REPO_TOKEN }}" ]; then
+            echo "❌ Missing required secret: SKILL_REPO_TOKEN"
+            exit 1
+          fi
+
+      - name: Checkout walker-di/skills (main)
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.TARGET_BRANCH }}
+          fetch-depth: 0
+          token: ${{ secrets.SKILL_REPO_TOKEN }}
+
+      - name: Checkout source repository
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.SOURCE_REPO }}
+          ref: ${{ inputs.source_ref }}
+          fetch-depth: 1
+          token: ${{ secrets.SKILL_REPO_TOKEN }}
+          path: ${{ env.SOURCE_PATH }}
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: ${{ env.SOURCE_PATH }}/package-lock.json
+
+      - name: Install source dependencies
+        working-directory: ${{ env.SOURCE_PATH }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm ci
+
+      - name: Validate routing index freshness
+        working-directory: ${{ env.SOURCE_PATH }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run check:fortalece-codex-skill-routing
+
+      - name: Validate public skills readiness
+        working-directory: ${{ env.SOURCE_PATH }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run skills:check-public
+
+      - name: Build public skills bundle
+        working-directory: ${{ env.SOURCE_PATH }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run skills:prepare-public
+
+      - name: Sync bundle and optionally push
+        id: sync
+        shell: bash
+        env:
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          set -euo pipefail
+
+          BUNDLE_DIR="${SOURCE_PATH}/artifacts/fortalece-ai-skills-public"
+          SOURCE_SHA="$(git -C "${SOURCE_PATH}" rev-parse HEAD)"
+          SOURCE_SHORT_SHA="${SOURCE_SHA:0:8}"
+
+          echo "source_sha=${SOURCE_SHA}" >> "$GITHUB_OUTPUT"
+
+          if [ ! -d "${BUNDLE_DIR}" ]; then
+            echo "❌ Missing generated bundle: ${BUNDLE_DIR}"
+            exit 1
+          fi
+
+          rm -rf "${TARGET_DIR}"
+          mkdir -p "${TARGET_DIR}"
+          cp -a "${BUNDLE_DIR}/." "${TARGET_DIR}/"
+
+          if [ ! -f "${TARGET_DIR}/manifest.json" ] || [ ! -f "${TARGET_DIR}/README.md" ] || [ ! -d "${TARGET_DIR}/skills" ]; then
+            echo "❌ Bundle contract violated. Expected ${TARGET_DIR}/manifest.json, README.md and skills/"
+            exit 1
+          fi
+
+          SKILLS_COUNT="$(node -e "const fs=require('node:fs');const m=JSON.parse(fs.readFileSync(process.argv[1],'utf8'));console.log(Array.isArray(m.skills)?m.skills.length:0);" "${TARGET_DIR}/manifest.json")"
+          echo "skills_count=${SKILLS_COUNT}" >> "$GITHUB_OUTPUT"
+
+          git add -A "${TARGET_DIR}"
+
+          if git diff --cached --quiet -- "${TARGET_DIR}"; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "push_performed=false" >> "$GITHUB_OUTPUT"
+            echo "✅ No updates detected for ${TARGET_DIR}"
+            exit 0
+          fi
+
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+          echo "changed_files<<EOF" >> "$GITHUB_OUTPUT"
+          git diff --cached --name-only -- "${TARGET_DIR}" >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
+
+          if [ "${DRY_RUN}" = "true" ]; then
+            echo "push_performed=false" >> "$GITHUB_OUTPUT"
+            echo "🧪 dry_run=true -> showing changed files only"
+            git diff --cached --name-only -- "${TARGET_DIR}"
+            exit 0
+          fi
+
+          git -c user.name="skills-ci-bot" -c user.email="ci@walker-di.com.br" \
+            commit -m "chore(skills): sync from pic-pay ${SOURCE_SHORT_SHA}"
+
+          if ! git push origin "HEAD:${TARGET_BRANCH}"; then
+            echo "❌ Push to ${TARGET_BRANCH} failed. If branch protection blocks bot pushes, allow workflow writes or switch to PR mode."
+            exit 1
+          fi
+
+          echo "push_performed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Publish summary
+        if: always()
+        shell: bash
+        env:
+          SOURCE_SHA: ${{ steps.sync.outputs.source_sha }}
+          SKILLS_COUNT: ${{ steps.sync.outputs.skills_count }}
+          CHANGED: ${{ steps.sync.outputs.changed }}
+          PUSH_PERFORMED: ${{ steps.sync.outputs.push_performed }}
+          CHANGED_FILES: ${{ steps.sync.outputs.changed_files }}
+        run: |
+          set -euo pipefail
+          {
+            echo "## Fortalece Skills Publish"
+            echo ""
+            echo "- Source repo: \`${SOURCE_REPO}\`"
+            echo "- Source ref: \`${{ inputs.source_ref }}\`"
+            echo "- Source SHA: \`${SOURCE_SHA:-n/a}\`"
+            echo "- Skills count: \`${SKILLS_COUNT:-n/a}\`"
+            echo "- Changes detected: \`${CHANGED:-false}\`"
+            echo "- Push performed: \`${PUSH_PERFORMED:-false}\`"
+            echo "- Dry run: \`${{ inputs.dry_run }}\`"
+            if [ -n "${CHANGED_FILES:-}" ]; then
+              echo ""
+              echo "### Changed files"
+              echo "\`\`\`text"
+              echo "${CHANGED_FILES}"
+              echo "\`\`\`"
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
