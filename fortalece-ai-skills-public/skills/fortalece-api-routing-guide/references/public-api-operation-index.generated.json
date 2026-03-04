@@ -372,6 +372,390 @@
       ]
     },
     {
+      "operation": "GET /api/billing/assignments",
+      "method": "GET",
+      "path": "/api/billing/assignments",
+      "endpoint_family": "/api/billing/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "PUT /api/billing/assignments",
+      "method": "PUT",
+      "path": "/api/billing/assignments",
+      "endpoint_family": "/api/billing/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/billing/assignments",
+      "method": "DELETE",
+      "path": "/api/billing/assignments",
+      "endpoint_family": "/api/billing/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/billing/board/import",
+      "method": "POST",
+      "path": "/api/billing/board/import",
+      "endpoint_family": "/api/billing/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/billing/board/sync",
+      "method": "POST",
+      "path": "/api/billing/board/sync",
+      "endpoint_family": "/api/billing/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/billing/catalog",
+      "method": "GET",
+      "path": "/api/billing/catalog",
+      "endpoint_family": "/api/billing/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/billing/catalog",
+      "method": "POST",
+      "path": "/api/billing/catalog",
+      "endpoint_family": "/api/billing/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "PUT /api/billing/catalog/{id}",
+      "method": "PUT",
+      "path": "/api/billing/catalog/{id}",
+      "endpoint_family": "/api/billing/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/billing/catalog/{id}",
+      "method": "DELETE",
+      "path": "/api/billing/catalog/{id}",
+      "endpoint_family": "/api/billing/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/billing/catalog/presets/apply",
+      "method": "POST",
+      "path": "/api/billing/catalog/presets/apply",
+      "endpoint_family": "/api/billing/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/billing/checkout",
+      "method": "POST",
+      "path": "/api/billing/checkout",
+      "endpoint_family": "/api/billing/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/billing/credits/purchase",
+      "method": "POST",
+      "path": "/api/billing/credits/purchase",
+      "endpoint_family": "/api/billing/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/billing/credits/verify",
+      "method": "POST",
+      "path": "/api/billing/credits/verify",
+      "endpoint_family": "/api/billing/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/billing/options",
+      "method": "GET",
+      "path": "/api/billing/options",
+      "endpoint_family": "/api/billing/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/billing/options",
+      "method": "POST",
+      "path": "/api/billing/options",
+      "endpoint_family": "/api/billing/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "PUT /api/billing/options/{id}",
+      "method": "PUT",
+      "path": "/api/billing/options/{id}",
+      "endpoint_family": "/api/billing/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/billing/options/{id}",
+      "method": "DELETE",
+      "path": "/api/billing/options/{id}",
+      "endpoint_family": "/api/billing/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/billing/portal",
+      "method": "POST",
+      "path": "/api/billing/portal",
+      "endpoint_family": "/api/billing/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/billing/profile",
+      "method": "GET",
+      "path": "/api/billing/profile",
+      "endpoint_family": "/api/billing/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "PUT /api/billing/profile",
+      "method": "PUT",
+      "path": "/api/billing/profile",
+      "endpoint_family": "/api/billing/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/billing/sync",
+      "method": "POST",
+      "path": "/api/billing/sync",
+      "endpoint_family": "/api/billing/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/billing/sync-status",
+      "method": "GET",
+      "path": "/api/billing/sync-status",
+      "endpoint_family": "/api/billing/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/billing/webhook",
+      "method": "GET",
+      "path": "/api/billing/webhook",
+      "endpoint_family": "/api/billing/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/billing/webhook",
+      "method": "POST",
+      "path": "/api/billing/webhook",
+      "endpoint_family": "/api/billing/**",
+      "auth_mode": "session-only",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "sessionAuth": []
+        }
+      ]
+    },
+    {
       "operation": "GET /api/blog",
       "method": "GET",
       "path": "/api/blog",
@@ -1370,6 +1754,25 @@
       ]
     },
     {
+      "operation": "POST /api/marketing/campaigns/{id}/actions",
+      "method": "POST",
+      "path": "/api/marketing/campaigns/{id}/actions",
+      "endpoint_family": "/api/marketing/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
       "operation": "GET /api/marketing/campaigns/{id}/content",
       "method": "GET",
       "path": "/api/marketing/campaigns/{id}/content",
@@ -1436,6 +1839,44 @@
         "workspace"
       ],
       "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/marketing/campaigns/{id}/queue",
+      "method": "GET",
+      "path": "/api/marketing/campaigns/{id}/queue",
+      "endpoint_family": "/api/marketing/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/marketing/campaigns/{id}/queue",
+      "method": "DELETE",
+      "path": "/api/marketing/campaigns/{id}/queue",
+      "endpoint_family": "/api/marketing/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
       "security": [
         {
           "bearerAuth": []
@@ -1563,6 +2004,63 @@
       "operation": "DELETE /api/marketing/content-items/{id}",
       "method": "DELETE",
       "path": "/api/marketing/content-items/{id}",
+      "endpoint_family": "/api/marketing/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/marketing/content-items/{id}/actions",
+      "method": "POST",
+      "path": "/api/marketing/content-items/{id}/actions",
+      "endpoint_family": "/api/marketing/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/marketing/content-items/{id}/queue",
+      "method": "GET",
+      "path": "/api/marketing/content-items/{id}/queue",
+      "endpoint_family": "/api/marketing/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/marketing/content-items/{id}/queue",
+      "method": "DELETE",
+      "path": "/api/marketing/content-items/{id}/queue",
       "endpoint_family": "/api/marketing/**",
       "auth_mode": "jwt-first",
       "scope_requirements": [
@@ -2557,6 +3055,326 @@
       ]
     },
     {
+      "operation": "GET /api/story-map/boards",
+      "method": "GET",
+      "path": "/api/story-map/boards",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/story-map/boards",
+      "method": "POST",
+      "path": "/api/story-map/boards",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "PATCH /api/story-map/boards/{id}",
+      "method": "PATCH",
+      "path": "/api/story-map/boards/{id}",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/story-map/boards/{id}",
+      "method": "DELETE",
+      "path": "/api/story-map/boards/{id}",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/story-map/boards/{id}/duplicate",
+      "method": "POST",
+      "path": "/api/story-map/boards/{id}/duplicate",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "PUT /api/story-map/boards/active",
+      "method": "PUT",
+      "path": "/api/story-map/boards/active",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/story-map/engine/commit",
+      "method": "POST",
+      "path": "/api/story-map/engine/commit",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/story-map/engine/events",
+      "method": "GET",
+      "path": "/api/story-map/engine/events",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/story-map/engine/events",
+      "method": "POST",
+      "path": "/api/story-map/engine/events",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/story-map/engine/ideas",
+      "method": "GET",
+      "path": "/api/story-map/engine/ideas",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/story-map/engine/missions",
+      "method": "GET",
+      "path": "/api/story-map/engine/missions",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/story-map/engine/packs",
+      "method": "GET",
+      "path": "/api/story-map/engine/packs",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/story-map/engine/packs/{id}/open",
+      "method": "POST",
+      "path": "/api/story-map/engine/packs/{id}/open",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/story-map/engine/preview",
+      "method": "POST",
+      "path": "/api/story-map/engine/preview",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/story-map/engine/runs/{id}/approve",
+      "method": "POST",
+      "path": "/api/story-map/engine/runs/{id}/approve",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/story-map/engine/runs/{id}/reject",
+      "method": "POST",
+      "path": "/api/story-map/engine/runs/{id}/reject",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
       "operation": "GET /api/story-map/epics",
       "method": "GET",
       "path": "/api/story-map/epics",
@@ -2640,6 +3458,26 @@
       "operation": "DELETE /api/story-map/epics/{id}",
       "method": "DELETE",
       "path": "/api/story-map/epics/{id}",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/story-map/epics/{id}/actions",
+      "method": "POST",
+      "path": "/api/story-map/epics/{id}/actions",
       "endpoint_family": "/api/story-map/**",
       "auth_mode": "jwt-first",
       "scope_requirements": [
@@ -2837,9 +3675,369 @@
       ]
     },
     {
+      "operation": "POST /api/story-map/features/{id}/actions",
+      "method": "POST",
+      "path": "/api/story-map/features/{id}/actions",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
       "operation": "POST /api/story-map/features/{id}/move-project",
       "method": "POST",
       "path": "/api/story-map/features/{id}/move-project",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/story-map/features/{id}/queue",
+      "method": "GET",
+      "path": "/api/story-map/features/{id}/queue",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/story-map/features/{id}/queue",
+      "method": "DELETE",
+      "path": "/api/story-map/features/{id}/queue",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/story-map/operating/entities",
+      "method": "GET",
+      "path": "/api/story-map/operating/entities",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/story-map/operating/entities",
+      "method": "POST",
+      "path": "/api/story-map/operating/entities",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/story-map/operating/entities/{id}",
+      "method": "GET",
+      "path": "/api/story-map/operating/entities/{id}",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "PATCH /api/story-map/operating/entities/{id}",
+      "method": "PATCH",
+      "path": "/api/story-map/operating/entities/{id}",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/story-map/operating/entities/{id}",
+      "method": "DELETE",
+      "path": "/api/story-map/operating/entities/{id}",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/story-map/operating/graph",
+      "method": "GET",
+      "path": "/api/story-map/operating/graph",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/story-map/operating/kpis",
+      "method": "GET",
+      "path": "/api/story-map/operating/kpis",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/story-map/operating/kpis/definitions",
+      "method": "GET",
+      "path": "/api/story-map/operating/kpis/definitions",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/story-map/operating/kpis/definitions",
+      "method": "POST",
+      "path": "/api/story-map/operating/kpis/definitions",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/story-map/operating/kpis/manual",
+      "method": "POST",
+      "path": "/api/story-map/operating/kpis/manual",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "GET /api/story-map/operating/links",
+      "method": "GET",
+      "path": "/api/story-map/operating/links",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "read",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/story-map/operating/links",
+      "method": "POST",
+      "path": "/api/story-map/operating/links",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "DELETE /api/story-map/operating/links/{id}",
+      "method": "DELETE",
+      "path": "/api/story-map/operating/links/{id}",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/story-map/operating/recipes/commit",
+      "method": "POST",
+      "path": "/api/story-map/operating/recipes/commit",
+      "endpoint_family": "/api/story-map/**",
+      "auth_mode": "jwt-first",
+      "scope_requirements": [
+        "workspace",
+        "project"
+      ],
+      "mutation_class": "write",
+      "security": [
+        {
+          "bearerAuth": []
+        },
+        {
+          "apiKeyHeader": []
+        }
+      ]
+    },
+    {
+      "operation": "POST /api/story-map/operating/recipes/preview",
+      "method": "POST",
+      "path": "/api/story-map/operating/recipes/preview",
       "endpoint_family": "/api/story-map/**",
       "auth_mode": "jwt-first",
       "scope_requirements": [
